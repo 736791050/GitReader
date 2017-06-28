@@ -1,20 +1,21 @@
 <view class="container">
-  <view class="page-section swiper">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{array}}" wx:key="*this">
         <swiper-item>
-          <!--<view class="swiper-item {{item}}"></view>-->
-          <image style="width: 100%; height: 100%; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+          <image style="width: 100%; height: 100%; background-color: #eeeeee;" mode="{{item.mode}}" src="{{item.src}}"/>
         </swiper-item>
       </block>
     </swiper>
-  </view>
-  <view bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    <text class="userinfo-time">{{timeStamp}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <View class="myview">
+      <View id="view0" hover="true" hover-class="green_hover">昨天</View>
+      <View id="view1">今天</View>
+      <View id="view2">明天</View>
+  </View>
+  <view class="list">
+    <view class="cell" wx:for="{{cells}}">
+      <p>{{item.title}}</p>
+      <view>{{item.des}}</view>
+      <view class="sepline"/>
+    </view>
   </view>
 </view>

@@ -1,121 +1,79 @@
 @import "../../common/lib/weui.wxss";
-
-button {
-  margin-bottom: 30rpx;
+.container {
+  display: flex;
+  flex-direction: column;/*竖排*/
+  min-height: 100%;
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+swiper {
+  height: 300rpx;
+}
+.myview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myview #view0{
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid gray;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  color: lightgray;
+}
+.myview #view1{
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid gray;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  color: blue;
+}
+.myview #view2{
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid gray;
+  border-top: 0rpx;
+  color:hotpink;
 }
 
-button:last-child {
-  margin-bottom: 0;
+.green_hover{
+  border: 5rpx solid black;
 }
 
-.page-section-title {
-  padding: 0;
+.list{
+  
 }
 
-.swiper-item {
-  display: block;
-  height: 150px;
+.list .cell{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 20rpx;
 }
 
-.page-section-title {
-  margin-top: 60rpx;
-  position: relative;
-}
-
-.info {
-  position: absolute;
-  right: 0;
-  color: #353535;
+.list .cell p{
+  color: blue;
+  flex: 1;
   font-size: 30rpx;
 }
 
-.page-foot {
-  margin-top: 50rpx;
+.list .cell view{
+  font-size: 25rpx;
 }
 
-/**index.wxss**/
-
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: orange;
-}
-
-.userinfo-time {
-  color: green;
-  margin-top: 30rpx;
-  font-size: 10px;
-}
-
-.usermotto {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.user-motto {
-}
-
-.demo-text-1 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #1aad19;
-  color: #fff;
-  font-size: 36rpx;
-}
-
-.demo-text-1:before {
-  content: 'A';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.demo-text-2 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #2782d7;
-  color: #fff;
-  font-size: 36rpx;
-}
-
-.demo-text-2:before {
-  content: 'B';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.demo-text-3 {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f1;
-  color: #353535;
-  font-size: 36rpx;
-}
-
-.demo-text-3:before {
-  content: 'C';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.list .cell .sepline{
+  width: 100%;
+  height: 3rpx;
+  background: lightgray;
+  margin-top: 20rpx;
 }
